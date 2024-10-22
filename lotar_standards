@@ -1,1 +1,554 @@
+package StrdsUserModel {
+  private import StrdsLibrary::*;
+  //StrdsLibrary
+  //private import StrdsMetadata::*;
+  private import Enums3::*;
 
+  part mbsestandards {
+    #mbsestandard sysmlbis {
+      //   attribute redefines problemStatement = "NEW PB STATEMENT";
+
+      // attribute redefines p1 = "sysml";
+      // attribute redefines name = "FMI";
+      attribute status = "statusval";
+      // attribute redefines category = StandardsCategory::DataAndInteroperability;
+      // attribute redefines implementationYear = 2021;
+
+      perform action generic_action {
+        //in cmd : EngineCommand = engineControl.cmd;
+      }
+    }
+  }
+
+  #goal goal1 {
+    :>> name = "goal1";
+    :>> description = "goal1 description";
+  }
+
+  #mbsestandard aadl {
+    :>> name = "AADL";
+    :>> status = Status::Static;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard uaf {
+    :>> name = "UAF";
+    :>> status = Status::Maturing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard pkf {
+    :>> name = "PKF";
+    :>> status = Status::Maturing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2023;
+  }
+
+  #mbsestandard xmi {
+    :>> name = "XMI";
+    :>> status = Status::Static;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2023;
+  }
+  #mbsestandard sparql {
+    :>> name = "SPARQL";
+    :>> status = Status::Maturing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2023;
+  }
+
+  #mbsestandard reqIF {
+    :>> name = "ReqIF";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::MBSEDeployment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard oslc {
+    :>> name = "OSLC";
+    :>> status = Status::Maturing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard rdfontology {
+    :>> name = "RDF ONTOLOGY";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2023;
+  }
+
+  #mbsestandard uml {
+    :>> name = "UML";
+    :>> status = Status::Static;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard marte {
+    :>> name = "MARTE";
+    :>> status = Status::Static;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard owl {
+    :>> name = "OWL";
+    :>> status = Status::Static;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard sysml {
+    :>> name = "SysML";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2020;
+  }
+  #mbsestandard sysphs {
+    :>> name = "SysPhs";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::MBSEDeployment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard sysmlv2 {
+    :>> name = "SysMLv2";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2023;
+  }
+  #mbsestandard sysmlv3 {
+    :>> name = "SysMLv3";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::FutureNeeds;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2025;
+  }
+
+  //------------------------
+
+  #mbsestandard ap233 {
+    :>> name = "AP233";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard step23x {
+    :>> name = "STEP 23x";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::FutureNeeds;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2026;
+  }
+  //----------------------------
+  #mbsestandard ap210 {
+    :>> name = "AP210";
+    :>> status = Status::Implementing;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard ap242 {
+    :>> name = "AP242";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2020;
+  }
+  #mbsestandard ap209 {
+    :>> name = "AP209";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2020;
+  }
+  #mbsestandard ap239 {
+    :>> name = "AP239";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2020;
+  }
+  #mbsestandard ap243 {
+    :>> name = "AP243";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2023;
+  }
+  #mbsestandard lotarprotocols {
+    :>> name = "LOTAR Protocols";
+    :>> status = { Planning };
+    :>> status_dev_stage = StatusDevStage::FutureNeeds;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2023;
+  }
+  //--------------------------------
+
+  #mbsestandard modelica_strd {
+    :>> name = "Modelica_strd";
+    :>> status = Status::Implementing;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+
+  #mbsestandard fmi {
+    :>> name = "FMI";
+    :>> status = Status::Implementing;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+
+  #mbsestandard ssp {
+    :>> name = "SSP";
+    :>> status = Status::Implementing;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard dcp {
+    :>> name = "DCP";
+    :>> status = Status::Evolving;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2025;
+  }
+  //------------------------
+  #mbsestandard ap232 {
+    :>> name = "AP232";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard nas9300_500 {
+    :>> name = "NAS9300_500";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+  #mbsestandard nas9300_520 {
+    :>> name = "NAS9300_520";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2023;
+  }
+  #mbsestandard nas9300_5xx {
+    :>> name = "NAS9300_5xx";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::ActiveDevelopment;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2025;
+  }
+
+  #mbsestandard milstd31000 {
+    :>> name = "MIL-STD-31000";
+    :>> status = Status::Implementing;
+    :>> status_dev_stage = StatusDevStage::FutureNeeds;
+    :>> category = Category::DataAndInteroperability;
+    :>> implementationYear = 2021;
+  }
+
+  //STANDARD BODY INSTANCES==================================================================
+
+  //temp deac size issue
+
+  //    #standard_body iso {
+  //     :>> name = "ISO";
+  //     :>> focus = "ISO focus";
+  //   }
+  #standard_body modelica {
+    :>> name = "Modelica Association";
+    :>> focus = "Non-profit organization developing open standards for computational modeling";
+  }
+
+  #standard_body omg {
+    :>> name = "OMG";
+    :>> focus = "Object Management Group, develops_strd enterprise integration standards";
+  }
+
+  #standard_body oasis {
+    :>> name = "OASIS";
+    :>> focus = "OASIS focus";
+  }
+  #standard_body w3c {
+    :>> name = "W3C";
+    :>> focus = "W3C focus";
+  }
+  #standard_body pdes {
+    :>> name = "PDES, Inc.";
+    :>> focus = "International consortium for standardized data exchange";
+  }
+  #standard_body lotar {
+    :>> name = "LOTAR";
+    :>> focus = "focus...";
+  }
+  #standard_body afnet {
+    :>> name = "AFNeT";
+    :>> focus = "focus...";
+  }
+  #standard_body prostepivip {
+    :>> name = "prostep ivip";
+    :>> focus = "focus...";
+  }
+  #standard_body incose {
+    :>> name = "INCOSE";
+    :>> focus = "focus...";
+  }
+  #standard_body nasa {
+    :>> name = "NASA";
+    :>> focus = "focus...";
+  }
+  #standard_body nafems {
+    :>> name = "NAFEMS";
+    :>> focus = "focus...";
+  }
+  #standard_body aia {
+    :>> name = "AIA";
+    :>> focus = "focus...";
+  }
+  #standard_body asd {
+    :>> name = "ASD";
+    :>> focus = "focus...";
+  }
+
+  // ... MBSE Capabilities====================================================================================================
+  #capability systemArchitecture {
+    :>> name = "System Architecture";
+    :>> description = "Defines system structure, connectivity, and requirements allocations";
+  }
+
+  #capability behaviorModeling {
+    :>> name = "Behavior Modeling";
+    :>> description = "Represents system behavior, performance, and controls";
+  }
+
+  #capability requirementsManagement {
+    :>> name = "Requirements Management";
+    :>> description = "Manages and traces system requirements";
+  }
+
+  //ref slide 9
+  // capa_Execution
+  //     capa_Translation
+  //     capa_Modeling
+  //     capa_Communication
+  //     capa_Analysis
+  //     capa_Simulation
+  //     capa_DataPackage
+
+  //ref slides 6
+  // capa_RequirementsManagement
+  //     capa_AnalysisAndSimulation
+  //     capa_ArchitectureAuthoring
+  //     capa_IntegrationAndLInking
+
+  // ... Data Types
+  #dataType systemStructure {
+    :>> name = "SystemStructure";
+    :>> description = "Represents the hierarchical composition of system components";
+  }
+
+  #dataType behaviorDiagram {
+    :>> name = "BehaviorDiagram";
+    :>> description = "Graphical representation of system behavior";
+  }
+
+  #dataType requirement_ {
+    :>> name = "Requirement";
+    :>> description = "Formal statement of system needs or constraints";
+  }
+
+  // ... Collaboration Strategies (Add instances as needed)
+
+  #collaborationStrategy sharedRepository {
+    :>> name = "Shared Repository";
+    :>> description = "Use a secured common repository where data/models from all parties are shared and executable";
+  }
+
+  #collaborationStrategy dataExchange {
+    :>> name = "Data Exchange";
+    :>> description = "Share data/models using standardized formats without expectation of receiving model revisions";
+  }
+
+  // Collaboration Strategies
+  //         part sharedRepository : CollaborationStrategy {
+  //             attribute redefines name = "Shared Repository";
+  //             attribute redefines description = "Use a secured common repository where data/models from all parties are shared and executable";
+  //         }
+
+  //         part dataExchange : CollaborationStrategy {
+  //             attribute redefines name = "Data Exchange";
+  //             attribute redefines description = "Share data/models using standardized formats without expectation of receiving model revisions";
+  //         }
+
+  // ... Implementation Roadmap
+  #implementationRoadmap //added the s here and worked TOFIX???
+  implementationRoadmaps {
+    :>> startYear = 2019;
+    :>> endYear = 2025;
+    :>> milestones = RoadmapMilestone::ProcessArchitecture; // Add your milestones here
+  }
+
+  // ... Connect elements using relationships
+
+  //sysmlHasSystemArchitecture
+  #hasCapability connect sysml to systemArchitecture;
+  #hasCapability connect aadl to systemArchitecture;
+  //systemArchitectureUsesSystemStructure
+  #usesDataType connect systemArchitecture to systemStructure;
+  //HAS_ROADMAP
+  #HAS_ROADMAP connect modelica to implementationRoadmaps;
+  //developSysML
+  #develops_strd connect omg to sysml;
+  #develops_strd connect omg to xmi;
+  #develops_strd connect omg to uaf;
+  #develops_strd connect omg to pkf;
+  #develops_strd connect omg to reqIF;
+  #develops_strd connect omg to marte;
+  #develops_strd connect omg to uml;
+  #develops_strd connect omg to sysphs;
+  #develops_strd connect omg to sysmlv2;
+  #develops_strd connect omg to sysmlv3;
+
+  #develops_strd connect modelica to modelica_strd;
+  #develops_strd connect modelica to fmi;
+  #develops_strd connect modelica to ssp;
+  #develops_strd connect modelica to dcp;
+
+  #develops_strd connect oasis to oslc;
+
+  #develops_strd connect w3c to owl;
+  #develops_strd connect w3c to sparql;
+  #develops_strd connect w3c to rdfontology;
+
+  //  #HasGoal connect sysml to goal1;
+
+  // input csv
+  //sysmlHasSystemArchitecture
+  //hasCapability,sysml,systemArchitecture
+  //hasCapability,aadl,systemArchitecture
+  //systemArchitectureUsesSystemStructure
+  //usesDataType,systemArchitecture,systemStructure
+  //HAS_ROADMAP
+  //HAS_ROADMAP,modelica,implementationRoadmaps
+  //developSysML
+  //develops_strd,omg,sysml
+  //develops_strd,omg,xmi
+  //develops_strd,omg,uaf
+  //develops_strd,omg,pkf
+  //develops_strd,omg,reqIF
+  //develops_strd,omg,marte
+  //develops_strd,omg,uml
+  //develops_strd,omg,sysphs
+  //develops_strd,omg,sysmlv2
+  //develops_strd,omg,sysmlv3
+
+  //develops_strd,modelica,modelica_strd
+  //develops_strd,modelica,fmi
+  //develops_strd,modelica,ssp
+  //develops_strd,modelica,dcp
+
+  //develops_strd,oasis,oslc
+
+  //develops_strd,w3c,owl
+  //develops_strd,w3c,sparql
+  //develops_strd,w3c,rdfontology
+
+  //new input for csv
+  //COMPLIES_WITH,MBSE_tool,Data_standard;
+  //SUPPORTS,MBSE_tool,Data_standard;
+  //MAINTAINS,standard_body,Data_standard;
+  //DEVELOPS,standard_body,Data_standard;
+  //MANAGES,standard_body,modeling_language;
+  //UTILIZES,mbse_activity,MBSE_tool;
+
+  //START OF MANUAL + AUTO REPLACE==========================================
+
+  #u_MBSE_tool MBSE_tool_1 {
+    :>> name = "MBSE_tool_1";
+  }
+  #u_Data_standard Data_standard_1 {
+    :>> name = "Data_standard_1";
+  }
+
+  //code for testing the connection:
+  #u_standard_body2 standard_body2_1 {
+    :>> name = "standard_body2_1";
+  }
+
+  #u_modeling_language modeling_language_1 {
+    :>> name = "modeling_language_1";
+  }
+
+  #u_mbse_activity mbse_activity_1 {
+    :>> name = "mbse_activity_1";
+  }
+
+  #mdd_COMPLIES_WITH connect MBSE_tool_1 to Data_standard_1;
+
+  //code for testing the connection:
+
+  #mdd_SUPPORTS connect MBSE_tool_1 to Data_standard_1;
+
+  #mdd_MAINTAINS connect standard_body2_1 to Data_standard_1;
+
+  #mdd_DEVELOPS connect standard_body2_1 to Data_standard_1;
+
+  #mdd_MANAGES connect standard_body2_1 to modeling_language_1;
+
+  #mdd_UTILIZES connect mbse_activity_1 to MBSE_tool_1;
+  //END OF MANUAL + AUTO REPLACE==========================================
+  //======================================================================
+
+  //AUTO===================================================
+  //code for testing the connection: to copy in the second package where used to create a model. this need to be moved to final model:
+
+  // #u_mbse_activity mbse_activity_1{
+  //     :>> name = "mbse_activity_1";
+  //   }
+
+  #u_mbse_tool mbse_tool_1 {
+    :>> name = "mbse_tool_1";
+  }
+  #mdd_IS_SUPPORTED_BY connect mbse_activity_1 to mbse_tool_1;
+
+  //code for testing the connection: to copy in the second package where used to create a model. this need to be moved to final model:
+
+  #u_data_exchange data_exchange_1 {
+    :>> name = "data_exchange_1";
+  }
+  #u_data_standard data_standard_1 {
+    :>> name = "data_standard_1";
+  }
+  #mdd_CONFORMS_TO connect data_exchange_1 to data_standard_1;
+
+  //code for testing the connection: to copy in the second package where used to create a model. this need to be moved to final model:
+
+  #u_model model_1 {
+    :>> name = "model_1";
+  }
+  #mdd_IS_CREATED_BY connect model_1 to mbse_tool_1;
+
+  //code for testing the connection: to copy in the second package where used to create a model. this need to be moved to final model:
+
+  #mdd_IS_SUPPORTED_BY2 connect mbse_activity_1 to mbse_tool_1;
+
+  //code for testing the connection: to copy in the second package where used to create a model. this need to be moved to final model:
+
+  #mdd_CONFORMS_TO2 connect data_exchange_1 to data_standard_1;
+
+  //code for testing the connection: to copy in the second package where used to create a model. this need to be moved to final model:
+
+  #mdd_IS_CREATED_BY2 connect model_1 to mbse_tool_1;
+
+  //END OF AUTO====================================
+} //END OF MODEL  
