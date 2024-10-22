@@ -1,7 +1,5 @@
 package StrdsUserModel {
-  private import StrdsLibrary::*;
-  //StrdsLibrary
-  //private import StrdsMetadata::*;
+
   private import Enums3::*;
 
   part mbsestandards {
